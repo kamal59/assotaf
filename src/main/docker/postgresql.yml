@@ -1,0 +1,12 @@
+version: '2'
+services:
+    tafgescom-postgresql:
+        container_name: tafgescom-postgresql
+        image: postgres:9.5.4
+        # volumes:
+        #     - ~/volumes/jhipster/tafgescom/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=tafgescom
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
